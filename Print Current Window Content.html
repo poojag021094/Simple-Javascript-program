@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Print Window Content</title>
+    <style media="screen">
+      button{
+        padding: 5px;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 90px;
+        height: 50px;
+        font-size: 16px;
+        text-align: center;
+        background: pink;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="print_Current_Page()" type="button" name="button">Click Me!</button>
+    <script>
+    function print_Current_Page(){
+      window.print();
+    }
+    </script>
+  </body>
+</html>
